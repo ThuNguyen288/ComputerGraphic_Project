@@ -15,7 +15,7 @@ D:/ComputerGraphic_Project/ComputerGraphic/My project
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-56702
+57488
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,12 @@ D:/ComputerGraphic_Project/ComputerGraphic/My project
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15028]  Target information:
+Player connection [3428]  Target information:
 
-Player connection [15028]  * "[IP] 172.28.81.94 [Port] 0 [Flags] 2 [Guid] 2467742772 [EditorId] 2467742772 [Version] 1048832 [Id] WindowsEditor(7,Thu) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [3428]  * "[IP] 172.28.81.94 [Port] 0 [Flags] 2 [Guid] 490194728 [EditorId] 490194728 [Version] 1048832 [Id] WindowsEditor(7,Thu) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [15028] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [15028] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3428] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [3428] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,7 +75,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.12 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.28f1 (f336aca0cab5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/Resources/UnitySubsystems
@@ -91,46 +91,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006167 seconds.
-- Loaded All Assemblies, in  0.533 seconds
+Registered in 0.008754 seconds.
+- Loaded All Assemblies, in  0.842 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.380 seconds
-Domain Reload Profiling: 910ms
-	BeginReloadAssembly (227ms)
+- Finished resetting the current domain, in  0.593 seconds
+Domain Reload Profiling: 1430ms
+	BeginReloadAssembly (280ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (188ms)
-		LoadAssemblies (222ms)
+	RebuildCommonClasses (84ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (114ms)
+	LoadAllAssembliesAndSetupDomain (339ms)
+		LoadAssemblies (272ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (185ms)
-			TypeCache.Refresh (183ms)
-				TypeCache.ScanAssembly (170ms)
+		AnalyzeDomain (332ms)
+			TypeCache.Refresh (330ms)
+				TypeCache.ScanAssembly (301ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (380ms)
+	FinalizeReload (593ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (330ms)
+		SetupLoadedEditorAssemblies (498ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (212ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			InitializePlatformSupportModulesInManaged (54ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (337ms)
+			ProcessInitializeOnLoadMethodAttributes (88ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -138,483 +138,59 @@ Domain Reload Profiling: 910ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.767 seconds
-Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.691 seconds
+Refreshing native plugins compatible for Editor in 3.09 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.092 seconds
-Domain Reload Profiling: 2855ms
-	BeginReloadAssembly (821ms)
+- Finished resetting the current domain, in  1.097 seconds
+Domain Reload Profiling: 2783ms
+	BeginReloadAssembly (817ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (40ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (38ms)
 	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (845ms)
-		LoadAssemblies (623ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (773ms)
+		LoadAssemblies (508ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (368ms)
-			TypeCache.Refresh (245ms)
-				TypeCache.ScanAssembly (223ms)
-			BuildScriptInfoCaches (104ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1092ms)
+		AnalyzeDomain (373ms)
+			TypeCache.Refresh (256ms)
+				TypeCache.ScanAssembly (236ms)
+			BuildScriptInfoCaches (101ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1098ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (807ms)
+		SetupLoadedEditorAssemblies (809ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (580ms)
-			ProcessInitializeOnLoadMethodAttributes (128ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (570ms)
+			ProcessInitializeOnLoadMethodAttributes (131ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 221 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6555 unused Assets / (4.7 MB). Loaded Objects now: 7349.
-Memory consumption went from 204.4 MB to 199.7 MB.
-Total: 12.319600 ms (FindLiveObjects: 0.792800 ms CreateObjectMapping: 1.233900 ms MarkObjects: 5.576700 ms  DeleteObjects: 4.714900 ms)
+Unloading 6554 unused Assets / (4.8 MB). Loaded Objects now: 7349.
+Memory consumption went from 204.5 MB to 199.7 MB.
+Total: 13.599500 ms (FindLiveObjects: 2.073100 ms CreateObjectMapping: 1.217900 ms MarkObjects: 7.222600 ms  DeleteObjects: 3.084600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 163586.674231 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_31.asset
-  artifactKey: Guid(f6d4829a6950ff94e85270d3fa1f75ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_31.asset using Guid(f6d4829a6950ff94e85270d3fa1f75ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af8c4dfb33b27f57e58041b9de29f2a8') in 0.1128905 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.213030 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_39.asset
-  artifactKey: Guid(815a98150ae40f24482bf4ae569f8718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_39.asset using Guid(815a98150ae40f24482bf4ae569f8718) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8cf5d203770a2f6cfc0b1b67d82a17c') in 0.0168544 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_43.asset
-  artifactKey: Guid(ada4c775f3d0f8e459af2867f50f7b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_43.asset using Guid(ada4c775f3d0f8e459af2867f50f7b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61f32eded05002464bed515ba48e8e9d') in 0.0222876 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.433522 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_47.asset
-  artifactKey: Guid(878b0f96c438d7a469c4ed3ee8afc16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_47.asset using Guid(878b0f96c438d7a469c4ed3ee8afc16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67960573138b914cee6aa1c833a89470') in 0.011581 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_50.asset
-  artifactKey: Guid(b857b6b27935d14478beeb0a19d9ed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_50.asset using Guid(b857b6b27935d14478beeb0a19d9ed05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec32b16e2807e99e62040b0c5be41d4d') in 0.0198542 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_53.asset
-  artifactKey: Guid(60fe87e379223bd4ca197f2113bf4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_53.asset using Guid(60fe87e379223bd4ca197f2113bf4448) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21c1976850e06b833e235aa0e903deaf') in 0.0130639 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_54.asset
-  artifactKey: Guid(4c98f0c7991a6af4784c33b1da8d20c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_54.asset using Guid(4c98f0c7991a6af4784c33b1da8d20c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc9a1385c1c6226c28a017a931799bab') in 0.0201192 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_60.asset
-  artifactKey: Guid(1d152d7da7af5144aaa09f2cfe101265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall/TX Tileset Wall_60.asset using Guid(1d152d7da7af5144aaa09f2cfe101265) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '20d1d4160633f89d0c062d5842fef118') in 0.0239832 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 77.579111 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_48.asset
-  artifactKey: Guid(e7bbb4a650099734ea63705700632b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_48.asset using Guid(e7bbb4a650099734ea63705700632b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '868b0ec52c80ddf854010ef8a585e8ba') in 0.0167517 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_56.asset
-  artifactKey: Guid(d34438802aea3c04dbf0025e8f353fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_56.asset using Guid(d34438802aea3c04dbf0025e8f353fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '836dc12dd871d457d98f7e92149948dd') in 0.0212487 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_59.asset
-  artifactKey: Guid(79c44570cea0f254eae53ccafe8b44c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_59.asset using Guid(79c44570cea0f254eae53ccafe8b44c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34ed554e03dd3da75d5ccdb485eb9dc3') in 0.0222907 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_51.asset
-  artifactKey: Guid(12bca067f3d8daf4ead9ae146ffce72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_51.asset using Guid(12bca067f3d8daf4ead9ae146ffce72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c629dd62db33cf5072ab844ad3c65eea') in 0.0224961 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_57.asset
-  artifactKey: Guid(b806ef69529740142af12b03e74f4064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_57.asset using Guid(b806ef69529740142af12b03e74f4064) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b286feba3acaf573ef6839004f149e6') in 0.0207422 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_66.asset
-  artifactKey: Guid(1d20fbc0e20d23647943eda34896a052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_66.asset using Guid(1d20fbc0e20d23647943eda34896a052) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d29571f116384edb6bfb3d539415de2') in 0.0216008 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_65.asset
-  artifactKey: Guid(499e81abc2089614eb1f3cc872617b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_65.asset using Guid(499e81abc2089614eb1f3cc872617b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cda0d5fc290af9d6f511252990a34fd2') in 0.019759 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_63.asset
-  artifactKey: Guid(b29a1ab0b3843cb439d18d0e41d27031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_63.asset using Guid(b29a1ab0b3843cb439d18d0e41d27031) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1223e8a8d707d185600794384f84b93e') in 0.0183309 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_62.asset
-  artifactKey: Guid(f893135106b4efb4d8ff80418dfd887b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_62.asset using Guid(f893135106b4efb4d8ff80418dfd887b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed25498c282aed2dd51d93055ca41e95') in 0.0209108 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_78.asset
-  artifactKey: Guid(6376983c312f74a4ca5943f06d2f387b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_78.asset using Guid(6376983c312f74a4ca5943f06d2f387b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1323a69476f66cfe450dbdc1f4b7536d') in 0.024303 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_64.asset
-  artifactKey: Guid(8e51d660aff45a74b839e19a6ba44109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_64.asset using Guid(8e51d660aff45a74b839e19a6ba44109) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e6ae4151dbaaaf613d29552f524194bf') in 0.0210254 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_69.asset
-  artifactKey: Guid(626d9ba57ee7a6d4e8f46d5bba0e2c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_69.asset using Guid(626d9ba57ee7a6d4e8f46d5bba0e2c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb117c740da12cf2d905c2a32d65f04c') in 0.0209134 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_53.asset
-  artifactKey: Guid(09f3dd3ac8782b146b4ad53d8e0ffe02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_53.asset using Guid(09f3dd3ac8782b146b4ad53d8e0ffe02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef2ba1406c08838a675a4eae6430de0e') in 0.0215667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_61.asset
-  artifactKey: Guid(bb0cc46a6515fb148ac926684001465d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_61.asset using Guid(bb0cc46a6515fb148ac926684001465d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e46118c5cc79cf45827c94bb4d84620f') in 0.0242902 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_73.asset
-  artifactKey: Guid(48afa7d87fccaba4dba299b307f79576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_73.asset using Guid(48afa7d87fccaba4dba299b307f79576) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4af172da8ab13dcdd1439a6def0323f') in 0.0221294 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_67.asset
-  artifactKey: Guid(b8b672394254f914c84255fa5f2f10d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_67.asset using Guid(b8b672394254f914c84255fa5f2f10d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f57bd5bd9fb58bca80c556d5c2fb1e2') in 0.0205953 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_50.asset
-  artifactKey: Guid(282e9a2038ffda34aabd2f44df56940c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_50.asset using Guid(282e9a2038ffda34aabd2f44df56940c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6bc474a25bb41699ae833af23ab1092') in 0.0183513 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.388286 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_40.asset
-  artifactKey: Guid(5e1203cad90f2a9409bde812d8b37bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_40.asset using Guid(5e1203cad90f2a9409bde812d8b37bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1266b6ebf7fc5509603e7229ecb8cd04') in 0.019766 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_43.asset
-  artifactKey: Guid(966eec4c9be308d40bed0949cb7f9974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_43.asset using Guid(966eec4c9be308d40bed0949cb7f9974) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '656bad85140038827fbba37a2c49deb2') in 0.0251536 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_38.asset
-  artifactKey: Guid(3a5b8c1ed6eb7d742b6334402d195963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_38.asset using Guid(3a5b8c1ed6eb7d742b6334402d195963) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb926afda611e5b729b81526b178e486') in 0.0221218 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_42.asset
-  artifactKey: Guid(23bd9a62c0bdbfb4cb6af453c9ba847d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_42.asset using Guid(23bd9a62c0bdbfb4cb6af453c9ba847d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b34dc8bf4279da43e4dd097f907f2317') in 0.0221823 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_46.asset
-  artifactKey: Guid(500531946f63f3841a5fb1d6488585c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_46.asset using Guid(500531946f63f3841a5fb1d6488585c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92e4c1ed4ddb930c0bc7243ba253c434') in 0.0228094 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_32.asset
-  artifactKey: Guid(ce5ffc98fc0fd164692d679265eb8785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_32.asset using Guid(ce5ffc98fc0fd164692d679265eb8785) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd78a15a878b5555b38e69ed52aa7a757') in 0.0218115 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_33.asset
-  artifactKey: Guid(1139cdf6eb5784349ab1a62c01ab96c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_33.asset using Guid(1139cdf6eb5784349ab1a62c01ab96c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c71e5b6728d53c8017e4b21c267751c3') in 0.0162843 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_27.asset
-  artifactKey: Guid(59bd0023b9124b44a88517823c2352b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_27.asset using Guid(59bd0023b9124b44a88517823c2352b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86adbfbd874db78c05d22939d0ea51ad') in 0.0185348 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_7.asset
-  artifactKey: Guid(3262b4cd6d83f5f409a9ed8b7abd6155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_7.asset using Guid(3262b4cd6d83f5f409a9ed8b7abd6155) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a57c410907e04048005843a3bebdb04') in 0.0203677 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_11.asset
-  artifactKey: Guid(cf76ad4a7ddb013409ed3c59485336d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_11.asset using Guid(cf76ad4a7ddb013409ed3c59485336d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02a142cdc693e8740ef04eb918d474b0') in 0.0179292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_23.asset
-  artifactKey: Guid(ba72bf629606ec546b499a7512311881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_23.asset using Guid(ba72bf629606ec546b499a7512311881) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4844aed616d124e7b7e7ed24af4ce58') in 0.0181267 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_18.asset
-  artifactKey: Guid(6816e320ce0dbbf419f9ef9781521a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_18.asset using Guid(6816e320ce0dbbf419f9ef9781521a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96bdf9da029afd8b096f509405a86d5b') in 0.0219905 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/Tileset.prefab
-  artifactKey: Guid(d7ec76486d2da6d4ead1ed43d4074828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/Tileset.prefab using Guid(d7ec76486d2da6d4ead1ed43d4074828) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9989c95d926a875fdb95d42c1053be41') in 0.8052422 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 268
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_19.asset
-  artifactKey: Guid(18a7d2f52d6db1b4c887459978276011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_19.asset using Guid(18a7d2f52d6db1b4c887459978276011) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a28f34b3e01ae2310f9fbfdb8ab3102') in 0.0277235 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_22.asset
-  artifactKey: Guid(471eba17cc0a44c4980da877ce18a5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_22.asset using Guid(471eba17cc0a44c4980da877ce18a5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5eba59e837e1b1cd4027542a0476a445') in 0.0216837 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_44.asset
-  artifactKey: Guid(425953b5027defc46baf6a7a31fcab79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_44.asset using Guid(425953b5027defc46baf6a7a31fcab79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6bbe5e569402cdeb422b5f02c6593968') in 0.0197954 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_34.asset
-  artifactKey: Guid(beebb35a31e608442b2f2e2d91ad1474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_34.asset using Guid(beebb35a31e608442b2f2e2d91ad1474) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d12e350d7828fb159d263b63e40fb2a') in 0.0197889 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.632764 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_82.asset
-  artifactKey: Guid(bff252e6b85e373489e2172d051f2fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_82.asset using Guid(bff252e6b85e373489e2172d051f2fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69b252bf0209d94fd0b9c292d163975b') in 0.0207607 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_83.asset
-  artifactKey: Guid(ce030d3a2982d82439fbc3efadd4f0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_83.asset using Guid(ce030d3a2982d82439fbc3efadd4f0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f677b8dbac1ea5b77ab9b4580efd70af') in 0.0230068 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_99.asset
-  artifactKey: Guid(99968cf915177cb4b9e562bf8603e433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_99.asset using Guid(99968cf915177cb4b9e562bf8603e433) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e87e1c125b22a78d77e3ce552bbbacaa') in 0.0230592 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_89.asset
-  artifactKey: Guid(e9af68f5450c7a24ca55977b1becf265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_89.asset using Guid(e9af68f5450c7a24ca55977b1becf265) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f04946722617924237656e3fe6ab55b') in 0.0196343 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_100.asset
-  artifactKey: Guid(edce06c0605ac014fb189083d3586261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_100.asset using Guid(edce06c0605ac014fb189083d3586261) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '318c94b875ff39adf4c0df0c1abec71f') in 0.0228123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_91.asset
-  artifactKey: Guid(645578ef70079604e854c73ed3d2358d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_91.asset using Guid(645578ef70079604e854c73ed3d2358d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ff655321ff81442b50eef125ab01243') in 0.0246098 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_107.asset
-  artifactKey: Guid(be2525ee5d43ac449b92764c29cd4377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_107.asset using Guid(be2525ee5d43ac449b92764c29cd4377) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f2171dc048da9338735ab06080595cc') in 0.0232529 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_93.asset
-  artifactKey: Guid(75e91d8fb96df2f4b8a54609fa6cc44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_93.asset using Guid(75e91d8fb96df2f4b8a54609fa6cc44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59786d06276f661ded0dfb3e16e6342a') in 0.0204239 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_98.asset
-  artifactKey: Guid(51850f072bd7e0d41b138427bbd41c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_98.asset using Guid(51850f072bd7e0d41b138427bbd41c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c891239ce99bef6a37100078374c5748') in 0.0212723 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_84.asset
-  artifactKey: Guid(adf2d0b3025599b448ad4cd50684e699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_84.asset using Guid(adf2d0b3025599b448ad4cd50684e699) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a1ba0d8ba0072ed755bedba9a18ec1e') in 0.0171707 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_87.asset
-  artifactKey: Guid(13f2746c65ecaf2428ed462f38edd15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Tileset/TileSet_87.asset using Guid(13f2746c65ecaf2428ed462f38edd15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92beddf31d6fdcc6d3dc16040ed2629c') in 0.0427028 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.189811 seconds.
-  path: Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall.prefab
-  artifactKey: Guid(8d8700121f1eb2c4abda7e8a3dafab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cainos/Pixel Art Top Down - Basic/Tile Palette/TP Wall.prefab using Guid(8d8700121f1eb2c4abda7e8a3dafab76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37b133f7b194e85f04e37e76b44bf006') in 0.0478638 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 142
+  Time since last request: 174973.331838 seconds.
+  path: Assets/Monsters Creatures Fantasy/Sprites/Flying eye/Death.png
+  artifactKey: Guid(b9517addf15136e47a89337d912454b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monsters Creatures Fantasy/Sprites/Flying eye/Death.png using Guid(b9517addf15136e47a89337d912454b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95a76c674d450af5c49cfe67e49dedf9') in 0.2258822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

@@ -471,7 +471,8 @@
 "Assets/Inventory System - Kinnly/Script/Player/PlayerTools.cs"
 "Assets/Inventory System - Kinnly/Script/SpawnItem.cs"
 "Assets/Inventory System - Kinnly/Script/Ysort.cs"
-"Assets/Scripts/PlayerController.cs"
+"Assets/Script/MonsterController.cs"
+"Assets/Script/PlayerAttack.cs"
 -langversion:9.0
 /deterministic
 /optimize+
