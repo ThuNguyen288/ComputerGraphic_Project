@@ -1,10 +1,10 @@
-﻿using UnityEngine;
+﻿using UnityEngine.UI;
+using UnityEngine;
 
 public class MonsterController : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody2D rb;
-
     public float moveSpeed = 2f;
     public float detectionRange = 5f;
     public int maxHealth = 100;
@@ -17,19 +17,24 @@ public class MonsterController : MonoBehaviour
 
     private bool isAttacking = false;
     private bool isHit = false;
-    private bool isDead = false;
+    private bool isDeath = false;
+
+    public Slider healthBar;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+
+        UpdateHealthBar();
+
     }
 
     void Update()
     {
 
-        if (isDead) return;
+        if (isDeath) return;
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
@@ -52,20 +57,24 @@ public class MonsterController : MonoBehaviour
 
     private void MoveTowardsPlayer()
     {
-        if (isDead) return;
+        if (isDeath) return;
 
-        // Chuyển sang trạng thái bay
-        animator.SetBool("isFlying", true);
+        // Transition to flying state
+        animator.SetBool("isMoving", true);
 
+        // Calculate direction vector towards player
         Vector2 direction = (player.position - transform.position).normalized;
-        rb.linearVelocity = new Vector2(direction.x * moveSpeed, rb.linearVelocity.y);
 
-        // Đổi hướng quái vật (quay mặt theo hướng người chơi)
+        // Update monster's velocity to move towards player
+        rb.linearVelocity = new Vector2(direction.x * moveSpeed, direction.y * moveSpeed);
+
+        // Flip the monster to face the player
         if (direction.x > 0)
             transform.localScale = new Vector3(1, 1, 1);
         else if (direction.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);
     }
+
 
     private void Attack()
     {
@@ -73,7 +82,7 @@ public class MonsterController : MonoBehaviour
         rb.linearVelocity = Vector2.zero; // Dừng di chuyển
 
         animator.SetBool("isAttacking", true); // Bật trạng thái tấn công
-        animator.SetBool("isFlying", false); // Bật trạng thái tấn công
+        animator.SetBool("isMoving", false);
 
         // Kiểm tra va chạm với người chơi
         Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
@@ -81,27 +90,30 @@ public class MonsterController : MonoBehaviour
         {
             if (player.CompareTag("Player"))
             {
-                Debug.Log("Player hit!");
+                // Gọi hàm TakeDamage của người chơi
+                player.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+                Debug.Log("Player hit by monster!");
             }
         }
-
     }
+
 
     private void EndAttack()
     {
         isAttacking = false;
         animator.SetBool("isAttacking", false); // Tắt Attack
-        animator.SetBool("isFlying", true); // Quay lại Flying
+        animator.SetBool("isMoving", true); // Quay lại Flying
     }
+
 
     public void TakeHit(int damage)
     {
-        if (isDead) return;
+        if (isDeath) return;
 
-        isHit = true;
         currentHealth -= damage;
-
-        animator.SetBool("isHit", true); // Kích hoạt animation bị đánh
+        UpdateHealthBar();
+        animator.SetBool("isHit", true);
+        animator.SetBool("isAttacking", false);
 
         if (currentHealth <= 0)
         {
@@ -109,23 +121,30 @@ public class MonsterController : MonoBehaviour
         }
         else
         {
-            Invoke(nameof(ResetHit), 0.5f);
+            Invoke(nameof(ResetHit), 0.1f);
         }
     }
 
-
     private void ResetHit()
     {
-        isHit = false;
-        animator.SetBool("isHit", false); // Tắt trạng thái Hit
-        animator.SetBool("isFlying", true); // Quay lại trạng thái Flying
+        animator.SetBool("isHit", false);
     }
+
+
+    private void UpdateHealthBar()
+    {
+        if (healthBar != null)
+            healthBar.value = (float)currentHealth / maxHealth;
+    }
+
 
     private void Die()
     {
-        isDead = true;
+        isAttacking = false;
+        isDeath = true;
         rb.linearVelocity = Vector2.zero; // Dừng mọi chuyển động
-        animator.SetBool("isDead", true); // Chuyển sang Death
+        animator.SetBool("isAttacking", false); // Chuyển sang Death
+        animator.SetBool("isDeath", true); // Chuyển sang Death
 
         GetComponent<Collider2D>().enabled = false; // Vô hiệu hóa Collider
         Destroy(gameObject, 1f); // Xóa quái vật sau 1 giây

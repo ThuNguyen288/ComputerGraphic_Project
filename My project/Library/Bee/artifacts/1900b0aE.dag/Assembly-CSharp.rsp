@@ -473,6 +473,7 @@
 "Assets/Inventory System - Kinnly/Script/Ysort.cs"
 "Assets/Script/MonsterController.cs"
 "Assets/Script/PlayerAttack.cs"
+"Assets/Script/PlayerHealth.cs"
 -langversion:9.0
 /deterministic
 /optimize+

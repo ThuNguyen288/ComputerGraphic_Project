@@ -21,8 +21,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        // Kiểm tra input tấn công (ví dụ: phím Space)
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time - lastAttackTime >= attackCooldown)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time - lastAttackTime >= attackCooldown && !isAttacking)
         {
             Attack();
         }
@@ -33,28 +32,25 @@ public class PlayerAttack : MonoBehaviour
         isAttacking = true;
         lastAttackTime = Time.time;
 
-        // Kích hoạt animation tấn công
         animator.SetTrigger("Attack");
 
-        // Kiểm tra va chạm với quái vật
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
         foreach (Collider2D enemy in hitEnemies)
         {
-            if (enemy.CompareTag("Enemy")) // Kiểm tra xem đối tượng có phải quái vật không
+            if (enemy.CompareTag("Enemy"))
             {
                 enemy.GetComponent<MonsterController>().TakeHit(attackDamage);
-                Debug.Log("Enemy hit!");
             }
         }
 
-        // Kết thúc trạng thái tấn công sau animation
-        Invoke(nameof(EndAttack), 0.3f); // 0.3 giây là thời gian giả định cho animation tấn công
+        Invoke(nameof(EndAttack), 0.3f);
     }
 
     private void EndAttack()
     {
         isAttacking = false;
     }
+
 
     private void OnDrawGizmosSelected()
     {
