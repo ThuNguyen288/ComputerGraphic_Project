@@ -2587,8 +2587,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63101794ee344c1429867aa4948e3844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPanel: {fileID: 2100118873}
-  playButton: {fileID: 1038888848}
+  startScreenUI: {fileID: 2100118873}
+  gameOverScreenUI: {fileID: 1549986083}
+  winScreenUI: {fileID: 809295997}
+  player: {fileID: 437883020}
+  enemies: {fileID: 752762850}
 --- !u!1 &225009205
 GameObject:
   m_ObjectHideFlags: 0
@@ -8573,7 +8576,6 @@ GameObject:
   - component: {fileID: 400708084}
   - component: {fileID: 400708083}
   - component: {fileID: 400708082}
-  - component: {fileID: 400708081}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -8601,18 +8603,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5.7229924, y: -51.50655}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &400708081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400708079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4529f3575352a540b35c2e2cc8dd975, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &400708082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8656,7 +8646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 400708083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 223293194}
+        m_TargetAssemblyTypeName: GameStartController, Assembly-CSharp
+        m_MethodName: StartGameAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &400708083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13250,9 +13252,10 @@ MonoBehaviour:
   attackPoint: {fileID: 1158483496}
   attackRange: 5
   attackDamage: 30
-  gameWin: {fileID: 809295997}
   attackCooldown: 1
   healthBar: {fileID: 820836634}
+  gameWinScreen: {fileID: 0}
+  gameStartController: {fileID: 0}
 --- !u!95 &752762852
 Animator:
   serializedVersion: 7
@@ -16790,7 +16793,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1038888849}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 223293194}
+        m_TargetAssemblyTypeName: GameStartController, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1038888849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31159,7 +31174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 17}
+  m_AnchoredPosition: {x: -69.6, y: 18.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495918610
@@ -31247,7 +31262,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -94.89576, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -35170,7 +35185,6 @@ GameObject:
   - component: {fileID: 1839409421}
   - component: {fileID: 1839409420}
   - component: {fileID: 1839409419}
-  - component: {fileID: 1839409418}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -35198,18 +35212,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5.7229924, y: -51.50655}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1839409418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1839409416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4529f3575352a540b35c2e2cc8dd975, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1839409419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35253,7 +35255,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1839409420}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 223293194}
+        m_TargetAssemblyTypeName: GameStartController, Assembly-CSharp
+        m_MethodName: StartGameAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1839409420
 MonoBehaviour:
   m_ObjectHideFlags: 0
