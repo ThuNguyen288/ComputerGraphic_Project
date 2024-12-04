@@ -1,17 +1,17 @@
+﻿using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Kinnly
 {
-    public class LoggingNode : MonoBehaviour, IInteractable, IDamageable
+    public class LoggingNode : MonoBehaviour, IDamageable
     {
         [Header("Core")]
-        [SerializeField] float maxHealth;
+        [SerializeField] int maxHealth;
         [SerializeField] GameObject itemDrop;
         [SerializeField] Item item;
 
-        Item currentlySelectedItem;
-        float health;
+        int health;
 
         private void Start()
         {
@@ -33,16 +33,12 @@ namespace Kinnly
             }
         }
 
-        public void Interact(PlayerInventory playerInventory)
-        {
-
-        }
-
         public void Damage(PlayerInventory playerInventory, int damage)
         {
             if (playerInventory.CurrentlySelectedInventoryItem.Item.isAxe)
             {
                 health -= damage;
+                Debug.Log(gameObject.name + health);
             }
         }
     }

@@ -99,26 +99,24 @@ public class PlayerHealth : MonoBehaviour
             GameStartController.ShowGameOverScreen();
         }
     }
+
     public void ResetHealth()
     {
         currentHealth = maxHealth; // Đặt lại máu về tối đa
         UpdateHealthBar();         // Cập nhật lại thanh máu
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("HealingPotion"))
+        {
+            Heal(20); // Hồi 20 máu khi nhặt thuốc
+            Destroy(collision.gameObject);
+        }
+        else if (collision.CompareTag("DamagePotion"))
+        {
+            IncreaseDamage(10); // Tăng 10 sát thương khi nhặt thuốc
+            Destroy(collision.gameObject);
+        }
+    }
 }
-
-
-
-//private void OnTriggerEnter2D(Collider2D collision)
-//{
-//    if (collision.CompareTag("HealingPotion"))
-//    {
-//        Heal(20); // Hồi 20 máu khi nhặt thuốc
-//        Destroy(collision.gameObject);
-//    }
-//    else if (collision.CompareTag("DamagePotion"))
-//    {
-//        IncreaseDamage(10); // Tăng 10 sát thương khi nhặt thuốc
-//        Destroy(collision.gameObject);
-//    }
-//

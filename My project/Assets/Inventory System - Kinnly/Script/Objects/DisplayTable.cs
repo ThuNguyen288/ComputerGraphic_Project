@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,6 +17,7 @@ namespace Kinnly
         [SerializeField] Item displayTable;
 
         private int health;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -66,8 +67,18 @@ namespace Kinnly
             if (playerInventory != null)
             {
                 InventoryItem _inventoryItem = playerInventory.CurrentlySelectedInventoryItem;
-                SetItem(_inventoryItem.Item, 1);
-                playerInventory.RemoveItem(_inventoryItem, 1);
+
+                // Kiểm tra nếu item giống nhau thì cộng dồn số lượng
+                if (_inventoryItem.Item == item)
+                {
+                    amount += 1; // Cộng dồn số lượng item
+                }
+                else
+                {
+                    SetItem(_inventoryItem.Item, 1); // Nếu item khác thì thêm item mới
+                }
+
+                playerInventory.RemoveItem(_inventoryItem, 1); // Xóa item khỏi inventory
             }
         }
 

@@ -1,47 +1,45 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Xml;
 using UnityEngine;
-
 
 namespace Kinnly
 {
-    public class Furnace : MonoBehaviour, IInteractable, IDamageable
+    public class Furnace : MonoBehaviour, IInteractable
     {
         [Header("Core")]
         [SerializeField] Animator animator;
 
         [Header("Assets")]
-        [SerializeField] GameObject itemDrop;
         [SerializeField] Item furnace;
 
         [Header("Recipe")]
-        [SerializeField] List<Item> input;
-        [SerializeField] List<Item> output;
-        [SerializeField] List<int> processingTime;
+        [SerializeField] List<Item> input;  // List các item yêu cầu cho Furnace (ví dụ: gỗ)
+        [SerializeField] List<int> inputAmounts; // List các số lượng yêu cầu cho mỗi item
+        [SerializeField] List<Item> output; // List các item kết quả sau khi gộp (ví dụ: rìu)
+        [SerializeField] List<int> outputAmounts; // List số lượng item kết quả sau khi gộp
+        [SerializeField] List<int> processingTime;  // Thời gian gộp cho mỗi item
 
-        //Health
+        // Health
         int health;
 
-        //Smelting Logic
+        // Smelting Logic
         bool isSmelting;
         int index;
+
+        // Reference đến Inventory của người chơi
+        private PlayerInventory playerInventory;
 
         // Start is called before the first frame update
         void Start()
         {
-            health = 1;
+            health = 1;  // Furnace không thể bị phá hủy trừ khi cố tình phá hủy
             index = -1;
             isSmelting = false;
+
+            playerInventory = Player.Instance.GetComponent<PlayerInventory>();
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            CheckHealth();
-        }
-
+        // Hàm tương tác với Furnace
         public void Interact(PlayerInventory playerInventory)
         {
             if (isSmelting)
@@ -56,69 +54,52 @@ namespace Kinnly
             }
         }
 
-        public void Damage(PlayerInventory playerInventory, int damage)
-        {
-            if (playerInventory.CurrentlySelectedInventoryItem.Item.isPickaxe)
-            {
-                health -= damage;
-            }
-        }
-
         private void Smelting(PlayerInventory playerInventory)
         {
             Item item = playerInventory.CurrentlySelectedInventoryItem.Item;
+            int itemCount = playerInventory.CurrentlySelectedInventoryItem.Amount;
+
             for (int i = 0; i < input.Count; i++)
             {
-                if (item != null)
+                // Kiểm tra xem item có phải là phần của công thức và đủ số lượng để gộp
+                if (item != null && item == input[i] && itemCount >= inputAmounts[i])
                 {
-                    if (item == input[i])
-                    {
-                        index = i;
-                        isSmelting = true;
-                        playerInventory.RemoveItem(playerInventory.CurrentlySelectedInventoryItem, 1);
-                        animator.SetBool("State", true);
-                        InvokeSmelted();
-                    }
+                    index = i;
+                    isSmelting = true;
+
+                    // Xóa số lượng item cần thiết khỏi inventory
+                    playerInventory.RemoveItem(playerInventory.CurrentlySelectedInventoryItem, inputAmounts[i]);
+
+                    // Kích hoạt hoạt ảnh và bắt đầu quá trình gộp
+                    animator.SetBool("State", true);
+                    InvokeSmelted(); // Sau khi gộp thành công, tiếp tục quá trình
+                    return;
                 }
             }
 
-            if (isSmelting == false)
+            if (!isSmelting)
             {
-                DialogBox.instance.Show("This Item Cannot be Smelted", 1f);
+                DialogBox.instance.Show("This Item Cannot be Merged", 1f);
             }
         }
 
         private void InvokeSmelted()
         {
+            // Gọi hàm Smelted sau thời gian xử lý
             Invoke("Smelted", processingTime[index]);
         }
 
         private void Smelted()
         {
+            // Kết thúc quá trình gộp, dừng hoạt ảnh và cập nhật trạng thái
             animator.SetBool("State", false);
             isSmelting = false;
-            SpawnItem(output[index], 1);
+
+            // Thêm item kết quả vào inventory
+            playerInventory.AddItem(output[index], outputAmounts[index]); // Thêm item mới vào inventory
+
+            // Reset trạng thái gộp
             index = -1;
-        }
-
-        private void SpawnItem(Item item, int amount)
-        {
-            Vector3 direction = new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), 0);
-            GameObject go = Instantiate(itemDrop, transform.position + direction, Quaternion.identity);
-            go.GetComponent<ItemDrop>().SetItem(item, amount);
-        }
-
-        private void CheckHealth()
-        {
-            if (health <= 0)
-            {
-                if (index != -1)
-                {
-                    SpawnItem(input[index], 1);
-                }
-                SpawnItem(furnace, 1);
-                Destroy(this.gameObject);
-            }
         }
     }
 }

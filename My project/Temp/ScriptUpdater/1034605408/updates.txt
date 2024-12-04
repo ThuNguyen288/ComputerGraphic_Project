@@ -1,2 +1,0 @@
-Temp/ScriptUpdater/1034605408\735626569_PlayerHealth.cs => Assets/Script/PlayerHealth.cs
-Temp/ScriptUpdater/1034605408\1017006914_MonsterController.cs => Assets/Script/MonsterController.cs
