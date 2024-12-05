@@ -18660,6 +18660,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6413462800365226699, guid: d3acb5ea42e14c14db7f5ffb8d9b17db, type: 3}
+      propertyPath: 'inputAmounts.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413462800365226699, guid: d3acb5ea42e14c14db7f5ffb8d9b17db, type: 3}
       propertyPath: 'processingTime.Array.data[0]'
       value: 2
       objectReference: {fileID: 0}
