@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\6000.0.28f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/ComputerGraphic_Project/ComputerGraphic/My project
+D:/My project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58333
+62081
 -job-worker-count
 5
 -background-job-worker-count
 8
 -asset-garbage-collectors
 1
-Successfully changed project path to: D:/ComputerGraphic_Project/ComputerGraphic/My project
-D:/ComputerGraphic_Project/ComputerGraphic/My project
+Successfully changed project path to: D:/My project
+D:/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,12 +59,12 @@ D:/ComputerGraphic_Project/ComputerGraphic/My project
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [28896]  Target information:
+Player connection [19844]  Target information:
 
-Player connection [28896]  * "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 815079464 [EditorId] 815079464 [Version] 1048832 [Id] WindowsEditor(7,Thu) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [19844]  * "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 2239461941 [EditorId] 2239461941 [Version] 1048832 [Id] WindowsEditor(7,Thu) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [28896] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [28896] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19844] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19844] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,11 +75,11 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 9.01 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 10.55 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.28f1 (f336aca0cab5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/ComputerGraphic_Project/ComputerGraphic/My project/Assets
+[Subsystems] Discovering subsystems at path D:/My project/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -91,46 +91,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008205 seconds.
-- Loaded All Assemblies, in  0.813 seconds
+Registered in 0.011010 seconds.
+- Loaded All Assemblies, in  0.970 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.644 seconds
-Domain Reload Profiling: 1454ms
-	BeginReloadAssembly (319ms)
+- Finished resetting the current domain, in  0.538 seconds
+Domain Reload Profiling: 1505ms
+	BeginReloadAssembly (415ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (328ms)
-		LoadAssemblies (315ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (106ms)
+	LoadAllAssembliesAndSetupDomain (351ms)
+		LoadAssemblies (409ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (321ms)
-			TypeCache.Refresh (318ms)
-				TypeCache.ScanAssembly (289ms)
+		AnalyzeDomain (344ms)
+			TypeCache.Refresh (341ms)
+				TypeCache.ScanAssembly (311ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (645ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (540ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (562ms)
+		SetupLoadedEditorAssemblies (483ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (11ms)
-			ProcessInitializeOnLoadAttributes (376ms)
-			ProcessInitializeOnLoadMethodAttributes (123ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (12ms)
+			ProcessInitializeOnLoadAttributes (312ms)
+			ProcessInitializeOnLoadMethodAttributes (111ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -138,780 +138,121 @@ Domain Reload Profiling: 1454ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-Symbol file data-000001E580542870 doesn't match image D:\ComputerGraphic_Project\ComputerGraphic\My project\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.750 seconds
-Refreshing native plugins compatible for Editor in 4.48 ms, found 4 plugins.
+- Loaded All Assemblies, in  2.951 seconds
+Refreshing native plugins compatible for Editor in 2.20 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.991 seconds
-Domain Reload Profiling: 4737ms
-	BeginReloadAssembly (1252ms)
+- Finished resetting the current domain, in  2.118 seconds
+Domain Reload Profiling: 5063ms
+	BeginReloadAssembly (1369ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (60ms)
-	RebuildCommonClasses (69ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (1334ms)
-		LoadAssemblies (917ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (1439ms)
+		LoadAssemblies (924ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (652ms)
-			TypeCache.Refresh (443ms)
-				TypeCache.ScanAssembly (395ms)
-			BuildScriptInfoCaches (176ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (1992ms)
+		AnalyzeDomain (763ms)
+			TypeCache.Refresh (616ms)
+				TypeCache.ScanAssembly (576ms)
+			BuildScriptInfoCaches (126ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2120ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1446ms)
+		SetupLoadedEditorAssemblies (1576ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (5ms)
 			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (1039ms)
-			ProcessInitializeOnLoadMethodAttributes (250ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.79 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 221 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6559 unused Assets / (4.5 MB). Loaded Objects now: 7354.
-Memory consumption went from 204.4 MB to 199.9 MB.
-Total: 21.795800 ms (FindLiveObjects: 3.117000 ms CreateObjectMapping: 2.036500 ms MarkObjects: 11.796400 ms  DeleteObjects: 4.839500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 409457.698557 seconds.
-  path: Assets/Main
-  artifactKey: Guid(2242ac221e6983c4ba2fc200a42a36b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main using Guid(2242ac221e6983c4ba2fc200a42a36b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '073fea9a0f1587bbcabb1d655503fa71') in 0.0151154 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.867099 seconds.
-  path: Assets/Main/Scenes
-  artifactKey: Guid(ecc2151c4778cdb4381f469db19c8f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/Scenes using Guid(ecc2151c4778cdb4381f469db19c8f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07aa1c62f12be4cf35241c1f95910db3') in 0.0008794 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.179589 seconds.
-  path: Assets/Main/ScriptableObjects
-  artifactKey: Guid(997d890789b80d24c956c2a0a69a6096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/ScriptableObjects using Guid(997d890789b80d24c956c2a0a69a6096) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ccb21b23ead2965324f60c41607b2b7') in 0.0005289 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.789601 seconds.
-  path: Assets/Main/Assets
-  artifactKey: Guid(c18c0e5b8b4ea794d8568ad09111c57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/Assets using Guid(c18c0e5b8b4ea794d8568ad09111c57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09c973a96b9f9035333cb4837fad581c') in 0.0005155 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.955654 seconds.
-  path: Assets/Main/Assets/Materials
-  artifactKey: Guid(1cf16ae40648a114a8143ff54599a247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/Assets/Materials using Guid(1cf16ae40648a114a8143ff54599a247) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '689097648ed59e0c7ff8897456cdf395') in 0.0005036 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.680428 seconds.
-  path: Assets/Main/Monster
-  artifactKey: Guid(9ad909903fba213448cbbe38d735ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/Monster using Guid(9ad909903fba213448cbbe38d735ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ab8cdf1a4a0659414201912be531f4f') in 0.0006494 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.809719 seconds.
-  path: Assets/Main/Monster/Sprite
-  artifactKey: Guid(13a87e22bee0e524bbd62c15b97861ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/Monster/Sprite using Guid(13a87e22bee0e524bbd62c15b97861ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '045345b5f4d5a7bedab07b6ba0764a2a') in 0.0005009 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.748272 seconds.
-  path: Assets/Main/Monster/Sprite/MonsterLevel1
-  artifactKey: Guid(9946421174354084c94059aff8e37b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/Monster/Sprite/MonsterLevel1 using Guid(9946421174354084c94059aff8e37b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5b4109c84480f878debe8caf5850689') in 0.0015337 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.151434 seconds.
-  path: Assets/RGP icons free start pack
-  artifactKey: Guid(b20ac21203d95f940a54ede6f0a84c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack using Guid(b20ac21203d95f940a54ede6f0a84c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '407f92936f617c6ed0d9583cbeb92ea1') in 0.0005778 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.166 seconds
-Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.387 seconds
-Domain Reload Profiling: 3554ms
-	BeginReloadAssembly (362ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (23ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (117ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (710ms)
-		LoadAssemblies (572ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (294ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (260ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (2388ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1661ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (132ms)
-			ProcessInitializeOnLoadAttributes (1351ms)
-			ProcessInitializeOnLoadMethodAttributes (132ms)
-			AfterProcessingInitializeOnLoad (25ms)
+			BeforeProcessingInitializeOnLoad (130ms)
+			ProcessInitializeOnLoadAttributes (1114ms)
+			ProcessInitializeOnLoadMethodAttributes (297ms)
+			AfterProcessingInitializeOnLoad (19ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (33ms)
-Refreshing native plugins compatible for Editor in 1.85 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 4.43 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6557 unused Assets / (4.1 MB). Loaded Objects now: 7359.
-Memory consumption went from 170.1 MB to 166.0 MB.
-Total: 27.812900 ms (FindLiveObjects: 3.919500 ms CreateObjectMapping: 3.557600 ms MarkObjects: 12.360200 ms  DeleteObjects: 7.972700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 134.651295 seconds.
-  path: Assets/Inventory System - Kinnly/Script 1
-  artifactKey: Guid(0a7fc9553686da4479934b1c792b28ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Script 1 using Guid(0a7fc9553686da4479934b1c792b28ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eea0cbb6cdfb579a6532ffac95c935b7') in 0.016339 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Unloading 221 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6559 unused Assets / (4.4 MB). Loaded Objects now: 7354.
+Memory consumption went from 204.7 MB to 200.2 MB.
+Total: 39.085400 ms (FindLiveObjects: 11.523000 ms CreateObjectMapping: 2.217300 ms MarkObjects: 15.402900 ms  DeleteObjects: 9.938700 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.729700 seconds.
-  path: Assets/Inventory System - Kinnly/Script 1/MonsterController.cs
-  artifactKey: Guid(56d1b04f6e3ff7144b5367bd9e723848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Script 1/MonsterController.cs using Guid(56d1b04f6e3ff7144b5367bd9e723848) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6521df8eeef161cec124ba494767c3bd') in 0.0008113 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.109 seconds
-Refreshing native plugins compatible for Editor in 1.74 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.352 seconds
-Domain Reload Profiling: 2462ms
-	BeginReloadAssembly (298ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (81ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (701ms)
-		LoadAssemblies (532ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (312ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (271ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1352ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (899ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (98ms)
-			ProcessInitializeOnLoadAttributes (707ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 3.98 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6557 unused Assets / (4.3 MB). Loaded Objects now: 7361.
-Memory consumption went from 170.1 MB to 165.8 MB.
-Total: 19.317700 ms (FindLiveObjects: 1.635300 ms CreateObjectMapping: 2.343000 ms MarkObjects: 10.741700 ms  DeleteObjects: 4.581900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 21.242577 seconds.
-  path: Assets/Inventory System - Kinnly/Animation
-  artifactKey: Guid(0d55bcccf49039545b339424ddf5efe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Animation using Guid(0d55bcccf49039545b339424ddf5efe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b815eb4a3eee41bc05b679fa436aaba9') in 0.0053684 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 98.395891 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/Damage.prefab
-  artifactKey: Guid(95caecb8e5ed751498e8580492f2ef2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/Damage.prefab using Guid(95caecb8e5ed751498e8580492f2ef2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7826fcc28130f19112d71ca30f94ff0c') in 0.9175159 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/Healing.prefab
-  artifactKey: Guid(935ca401db0fd64468e11290fe15c514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/Healing.prefab using Guid(935ca401db0fd64468e11290fe15c514) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6355430c8b88e478cf48dabec1c3a703') in 0.0267354 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/Tree.prefab
-  artifactKey: Guid(027a7182c13cebc42a3ab3fe21511ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/Tree.prefab using Guid(027a7182c13cebc42a3ab3fe21511ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eab95df6a96b60c7b515b22ed13b75a9') in 0.0287706 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/Flower_Yellow.prefab
-  artifactKey: Guid(21f4687c51a8d3e45ae89931b2ab8ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/Flower_Yellow.prefab using Guid(21f4687c51a8d3e45ae89931b2ab8ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bfb75d87b18ab8180c355dbfb468389') in 0.0285177 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/Flower_Blue.prefab
-  artifactKey: Guid(532d9225bd789994485a2b1246771a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/Flower_Blue.prefab using Guid(532d9225bd789994485a2b1246771a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41ec9a431b9452c1d5bd84dfaa2479b7') in 0.0312858 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/Flower_Red 2.prefab
-  artifactKey: Guid(7a3f4e09a64281d41a342298af9a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/Flower_Red 2.prefab using Guid(7a3f4e09a64281d41a342298af9a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '059143736b868f50ffa8b7955de7fbd7') in 0.0338839 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/InventoryItem.prefab
-  artifactKey: Guid(361058cee52059c4b9671dff39a9cdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/InventoryItem.prefab using Guid(361058cee52059c4b9671dff39a9cdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1c5e2753bda15bacd69e13f8ca926be') in 0.0521101 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Inventory System - Kinnly/Prefabs/Node_Copper.prefab
+  Time since last request: 440861.095810 seconds.
+  path: Assets/Main/Prefab/Node_Copper.prefab
   artifactKey: Guid(2cc8c86772e0f834681025c77a50bf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefabs/Node_Copper.prefab using Guid(2cc8c86772e0f834681025c77a50bf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7c54e5d7acf5b469215b52283af9e05') in 0.025829 seconds
+Start importing Assets/Main/Prefab/Node_Copper.prefab using Guid(2cc8c86772e0f834681025c77a50bf61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c740d54deaf6db33403b8afb79acdad0') in 0.931059 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.404859 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/MosterLevel1.prefab
-  artifactKey: Guid(84446fd00edf13c46b9d445e7002fe0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/MosterLevel1.prefab using Guid(84446fd00edf13c46b9d445e7002fe0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b68cd8de3e0d84a81639d4e33e2ee538') in 0.0674225 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 81
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.600768 seconds.
-  path: Assets/Inventory System - Kinnly/Assets/Materials/Tree.mat
-  artifactKey: Guid(f0a9c29360663d345841643b08018423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Assets/Materials/Tree.mat using Guid(f0a9c29360663d345841643b08018423) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e24e7f43ec6e62030eff23c82fd5a729') in 0.0619128 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  5.710 seconds
-Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.982 seconds
-Domain Reload Profiling: 7708ms
-	BeginReloadAssembly (3274ms)
-		ExecutionOrderSort (5ms)
-		DisableScriptedObjects (638ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (7ms)
-		CreateAndSetChildDomain (1731ms)
-	RebuildCommonClasses (71ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (2293ms)
-		LoadAssemblies (1846ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (872ms)
-			TypeCache.Refresh (95ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (715ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (1983ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1335ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (15ms)
-			BeforeProcessingInitializeOnLoad (123ms)
-			ProcessInitializeOnLoadAttributes (1070ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 1.90 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6561 unused Assets / (5.9 MB). Loaded Objects now: 7427.
-Memory consumption went from 173.2 MB to 167.3 MB.
-Total: 26.728700 ms (FindLiveObjects: 3.116300 ms CreateObjectMapping: 1.649300 ms MarkObjects: 12.889400 ms  DeleteObjects: 9.070600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6545 unused Assets / (4.6 MB). Loaded Objects now: 7426.
-Memory consumption went from 173.2 MB to 168.6 MB.
-Total: 113.451200 ms (FindLiveObjects: 2.491800 ms CreateObjectMapping: 1.454800 ms MarkObjects: 103.343600 ms  DeleteObjects: 6.159000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.067 seconds
-Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.630 seconds
-Domain Reload Profiling: 4700ms
-	BeginReloadAssembly (898ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (93ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (409ms)
-	RebuildCommonClasses (60ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (2037ms)
-		LoadAssemblies (1553ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (748ms)
-			TypeCache.Refresh (110ms)
-				TypeCache.ScanAssembly (3ms)
-			BuildScriptInfoCaches (590ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (1631ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1121ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (107ms)
-			ProcessInitializeOnLoadAttributes (865ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
-			AfterProcessingInitializeOnLoad (15ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6556 unused Assets / (4.5 MB). Loaded Objects now: 7428.
-Memory consumption went from 173.0 MB to 168.5 MB.
-Total: 25.646000 ms (FindLiveObjects: 3.538300 ms CreateObjectMapping: 2.620400 ms MarkObjects: 12.100400 ms  DeleteObjects: 7.384000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 798.314221 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab
-  artifactKey: Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab using Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f127f0092982fb9899c90631450fc0db') in 1.5855587 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.96 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6545 unused Assets / (4.1 MB). Loaded Objects now: 7552.
-Memory consumption went from 178.7 MB to 174.6 MB.
-Total: 46.992800 ms (FindLiveObjects: 2.206900 ms CreateObjectMapping: 1.539900 ms MarkObjects: 40.819000 ms  DeleteObjects: 2.425600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 105.092677 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab
-  artifactKey: Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab using Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e3f65927487e59cb1709f8187f5091dc') in 0.0494018 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.256814 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab
-  artifactKey: Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab using Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba1e779d6bdecd47d2a2b4a55fb34fcb') in 0.0189722 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/Sword.prefab
-  artifactKey: Guid(7a3f4e09a64281d41a342298af9a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/Sword.prefab using Guid(7a3f4e09a64281d41a342298af9a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29deb67c8ac21fbf4b540721ac8465bb') in 0.0120771 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.59 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6546 unused Assets / (4.4 MB). Loaded Objects now: 7553.
-Memory consumption went from 178.7 MB to 174.3 MB.
-Total: 34.568900 ms (FindLiveObjects: 0.943300 ms CreateObjectMapping: 1.329900 ms MarkObjects: 28.056100 ms  DeleteObjects: 4.238100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.64 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6546 unused Assets / (4.4 MB). Loaded Objects now: 7553.
-Memory consumption went from 178.7 MB to 174.3 MB.
-Total: 23.564400 ms (FindLiveObjects: 2.469800 ms CreateObjectMapping: 1.567900 ms MarkObjects: 13.784200 ms  DeleteObjects: 5.740300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 232.487111 seconds.
-  path: Assets/Inventory System - Kinnly/Script/Weapon.cs
-  artifactKey: Guid(60acecece04f6b34e8925c47fcebc114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Script/Weapon.cs using Guid(60acecece04f6b34e8925c47fcebc114) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e74872bd6eae07d887121fc178376a85') in 0.0702612 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.529 seconds
-Refreshing native plugins compatible for Editor in 1.88 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.416 seconds
-Domain Reload Profiling: 4944ms
-	BeginReloadAssembly (1410ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (259ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (687ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (1996ms)
-		LoadAssemblies (1699ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (573ms)
-			TypeCache.Refresh (56ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (485ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (1416ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (926ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (736ms)
-			ProcessInitializeOnLoadMethodAttributes (80ms)
-			AfterProcessingInitializeOnLoad (13ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6557 unused Assets / (4.7 MB). Loaded Objects now: 7453.
-Memory consumption went from 174.7 MB to 170.0 MB.
-Total: 14.340500 ms (FindLiveObjects: 1.009800 ms CreateObjectMapping: 1.283700 ms MarkObjects: 6.765600 ms  DeleteObjects: 5.278600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 223.872798 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/apple.png
-  artifactKey: Guid(6ba59f7ff7e67fc4f99b39c49e550579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/apple.png using Guid(6ba59f7ff7e67fc4f99b39c49e550579) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b4fe6c04baadc51b515e4b82396e774') in 0.1870921 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cow.png
-  artifactKey: Guid(f57ffee50b87d0b48893c2f311645277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cow.png using Guid(f57ffee50b87d0b48893c2f311645277) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c16e4890a156581d4a7b417014897cdd') in 0.0304848 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 97.767661 seconds.
+  path: Assets/Main/Prefab/Damage.prefab
+  artifactKey: Guid(95caecb8e5ed751498e8580492f2ef2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main/Prefab/Damage.prefab using Guid(95caecb8e5ed751498e8580492f2ef2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a8fe5d1f4f77ae2ce72e95bb31f023d') in 0.0238675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/barrel.png
-  artifactKey: Guid(7b511e2eae6a6fd4d945e79394bc76c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/barrel.png using Guid(7b511e2eae6a6fd4d945e79394bc76c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c87328b7b35f60fb525cbc5e90bb13a2') in 0.0297306 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  path: Assets/Main/Prefab/Healing.prefab
+  artifactKey: Guid(935ca401db0fd64468e11290fe15c514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main/Prefab/Healing.prefab using Guid(935ca401db0fd64468e11290fe15c514) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85d69b9d6ac2704709629197107deaf8') in 0.018042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/fish.png
-  artifactKey: Guid(5e86142fd0aa8774c81e4bdce82a0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/fish.png using Guid(5e86142fd0aa8774c81e4bdce82a0337) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c63cbbaa1780ae75d0409f2bdd12781') in 0.0345693 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 5.622038 seconds.
+  path: Assets/Main/Prefab/Damage.prefab
+  artifactKey: Guid(95caecb8e5ed751498e8580492f2ef2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main/Prefab/Damage.prefab using Guid(95caecb8e5ed751498e8580492f2ef2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '547eae92930f3be820ca64d593528d6d') in 0.0090586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/copperingots.png
-  artifactKey: Guid(e1b9181489040fa47b44cfa9e4d38928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/copperingots.png using Guid(e1b9181489040fa47b44cfa9e4d38928) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22a9fa849c2a95c56c4c74d73cc1d4c4') in 0.0384954 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 0.000041 seconds.
+  path: Assets/Main/Prefab/Healing.prefab
+  artifactKey: Guid(935ca401db0fd64468e11290fe15c514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main/Prefab/Healing.prefab using Guid(935ca401db0fd64468e11290fe15c514) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a48fb934f7b4254596f1fd83130cf71d') in 0.0121156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bananas.png
-  artifactKey: Guid(36467222149a0df4d985035dc9080ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bananas.png using Guid(36467222149a0df4d985035dc9080ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4d8f2f650bc12afc04d55c015f9efc7') in 0.0408948 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 560.629995 seconds.
+  path: Assets/Main/Script/GameStartConreoller.cs
+  artifactKey: Guid(63101794ee344c1429867aa4948e3844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main/Script/GameStartConreoller.cs using Guid(63101794ee344c1429867aa4948e3844) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e12d3999f1302b11e1ae7cef6d1d8514') in 0.007317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/glass.png
-  artifactKey: Guid(7a97cb21630d39645a024e14dcac934a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/glass.png using Guid(7a97cb21630d39645a024e14dcac934a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ce8acad48f4ee8eba4d7dd1057c61d9') in 0.0365676 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 8.276557 seconds.
+  path: Assets/Main/Script/Player/PlayerAttack.cs
+  artifactKey: Guid(406154051d179314e8e674cbf008177f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main/Script/Player/PlayerAttack.cs using Guid(406154051d179314e8e674cbf008177f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78bfc80e3668addacff35417131ba77b') in 0.0012596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000091 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/logs.png
-  artifactKey: Guid(e232efa096f10134a91bdf0ff689e302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/logs.png using Guid(e232efa096f10134a91bdf0ff689e302) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a74a94441dabb028fb690ab2a97cbfa') in 0.0417069 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 273.968712 seconds.
+  path: Assets/Main/Script/Interfaces
+  artifactKey: Guid(469b9439cc1add44f9ab1165808659ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main/Script/Interfaces using Guid(469b9439cc1add44f9ab1165808659ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '171b39082a05c9f90a68e47cc761bf99') in 0.0204641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cloth2.png
-  artifactKey: Guid(df737b3eea0d34140a2db70bbba4727a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cloth2.png using Guid(df737b3eea0d34140a2db70bbba4727a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be7c45c4994d0b02346a692d43d405ed') in 0.0353141 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cigar.png
-  artifactKey: Guid(84439d4fa3e72aa47bbdc04b8e02d3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cigar.png using Guid(84439d4fa3e72aa47bbdc04b8e02d3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62348160854d2902e1f2d14ccbdd1ffc') in 0.0281252 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bell.png
-  artifactKey: Guid(1c7a80e10e35bfc43ae3581dea0ce3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bell.png using Guid(1c7a80e10e35bfc43ae3581dea0ce3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56191942f92f8ef4cdb7200a355e98d4') in 0.0296415 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/horseshoe.png
-  artifactKey: Guid(09150989a86a44045bac955ed6ff2e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/horseshoe.png using Guid(09150989a86a44045bac955ed6ff2e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06049babc3a13279f48325471c12aee5') in 0.024566 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/coins.png
-  artifactKey: Guid(9d1483c4f9b7c4949954abd3c6d0718d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/coins.png using Guid(9d1483c4f9b7c4949954abd3c6d0718d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0f57eaa548a1d08f0d2cafc48ab4038') in 0.0252221 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bronze-bars.png
-  artifactKey: Guid(4aa51169f48c2c64ebaf2ad9072def28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bronze-bars.png using Guid(4aa51169f48c2c64ebaf2ad9072def28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d595fffc9a7c11194af75bd04ae7986') in 0.0253203 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/flintlock.png
-  artifactKey: Guid(04e6b3a5165989447850c74a83dfe88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/flintlock.png using Guid(04e6b3a5165989447850c74a83dfe88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9cfeccc0d9bd41d54204ef4c76d63060') in 0.0295923 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cocoa.png
-  artifactKey: Guid(7d2378a8bc63f41409a7a6b6abdafdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cocoa.png using Guid(7d2378a8bc63f41409a7a6b6abdafdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '745960c162cea9a5b26cd33a456b5aea') in 0.0286015 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cigarvertical.png
-  artifactKey: Guid(48e3683c1104e244caaaacef296814f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cigarvertical.png using Guid(48e3683c1104e244caaaacef296814f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89fd8e3ed21190b22c82b52c4b28aa73') in 0.0284568 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/gold-coin.png
-  artifactKey: Guid(85390185c5a1b744c9d5588109fe4326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/gold-coin.png using Guid(85390185c5a1b744c9d5588109fe4326) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4af916493161911c50302ab3ad450143') in 0.0303845 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/element710.png
-  artifactKey: Guid(9cabde73ebd71f84aab4bb730a7a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/element710.png using Guid(9cabde73ebd71f84aab4bb730a7a9eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3c5cf41a21aaaf6cfdbb21f7ff2c68e') in 0.0302136 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/goldbars.png
-  artifactKey: Guid(9b31bf06dbb7e98448dd5712f6b7360d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/goldbars.png using Guid(9b31bf06dbb7e98448dd5712f6b7360d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ce237ec33330fbd268a86b437dcfff3') in 0.033732 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cloves.png
-  artifactKey: Guid(226e4fabf0cd7cf4a9c16e6534e340d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cloves.png using Guid(226e4fabf0cd7cf4a9c16e6534e340d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb9f4c58acb067a0bce7aae4be9cc468') in 0.033451 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/crystal.png
-  artifactKey: Guid(64da693ba6b64ae44a77b519e8467d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/crystal.png using Guid(64da693ba6b64ae44a77b519e8467d05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '330f69191fd6fc5fe6eb66f3c7f5a188') in 0.0333708 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bottle2.png
-  artifactKey: Guid(01cde3e65d8607a45b6948393adc3916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/bottle2.png using Guid(01cde3e65d8607a45b6948393adc3916) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce53334ddd2967774a0a5c3626997763') in 0.0390827 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cloth.png
-  artifactKey: Guid(52fb237ff24c44e4291bf8932a733f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/cloth.png using Guid(52fb237ff24c44e4291bf8932a733f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1af64c1f549ed8443fb304e1b029fe85') in 0.0300853 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/grapes.png
-  artifactKey: Guid(26528e1371fd8c24cbc37bde69e07e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/StrategyGameResourceIcons/Icons/grapes.png using Guid(26528e1371fd8c24cbc37bde69e07e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f66738f0a2b8d759fa290edc06c5373') in 0.0306791 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.001583 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab
-  artifactKey: Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab using Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70a0f8c0edc6ae85ecadf0654d0724c2') in 0.7900779 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/Sword.prefab
+  Time since last request: 51.724490 seconds.
+  path: Assets/Main/Prefab/Sword.prefab
   artifactKey: Guid(7a3f4e09a64281d41a342298af9a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/Sword.prefab using Guid(7a3f4e09a64281d41a342298af9a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f70082eaa362577ed49276f2d12968c') in 0.0194912 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+Start importing Assets/Main/Prefab/Sword.prefab using Guid(7a3f4e09a64281d41a342298af9a4da3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8799628a050aa74114b2c1880797cb3a') in 0.2398313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
 
-========================================================================
-Received Import Request.
-  Time since last request: 5.368599 seconds.
-  path: Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab
-  artifactKey: Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Inventory System - Kinnly/Prefab/Node_Iron.prefab using Guid(f15e5026d376f2e448d72350d7bcd9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fa9eaccc34c5cb37e01493e1f443bbf') in 0.0195842 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
