@@ -10,29 +10,30 @@ namespace Kinnly
         [SerializeField] Item furnace;
 
         [Header("Recipe")]
-        [SerializeField] List<Item> input;  // List các item yêu cầu cho Furnace (ví dụ: gỗ)
-        [SerializeField] List<int> inputAmounts; // List các số lượng yêu cầu cho mỗi item
-        [SerializeField] List<Item> output; // List các item kết quả sau khi gộp (ví dụ: rìu)
-        [SerializeField] List<int> outputAmounts; // List số lượng item kết quả sau khi gộp
-        [SerializeField] List<int> processingTime;  // Thời gian gộp cho mỗi item
+        [SerializeField] List<Item> input;
+        [SerializeField] List<int> inputAmounts;
+        [SerializeField] List<Item> output;
+        [SerializeField] List<int> outputAmounts;
+        [SerializeField] List<int> processingTime;
 
-        // Smelting Logic
+        [Header("Decorations")]
+        [SerializeField] ParticleSystem smeltingEffect; // Hiệu ứng lửa
+        [SerializeField] AudioSource smeltingSound;     // Âm thanh nung chảy
+
         bool isSmelting;
         int index;
 
-        // Reference đến Inventory của người chơi
         private PlayerInventory playerInventory;
 
-        // Start is called before the first frame update
         void Start()
         {
             index = -1;
             isSmelting = false;
 
             playerInventory = Player.Instance.GetComponent<PlayerInventory>();
+            if (smeltingEffect != null) smeltingEffect.Stop(); // Đảm bảo hiệu ứng tắt lúc đầu
         }
 
-        // Hàm tương tác với Furnace
         public void Interact(PlayerInventory playerInventory)
         {
             if (isSmelting)
@@ -54,17 +55,18 @@ namespace Kinnly
 
             for (int i = 0; i < input.Count; i++)
             {
-                // Kiểm tra xem item có phải là phần của công thức và đủ số lượng để gộp
                 if (item != null && item == input[i] && itemCount >= inputAmounts[i])
                 {
                     index = i;
                     isSmelting = true;
 
-                    // Xóa số lượng item cần thiết khỏi inventory
                     playerInventory.RemoveItem(playerInventory.CurrentlySelectedInventoryItem, inputAmounts[i]);
 
-                    // Bắt đầu quá trình gộp
-                    InvokeSmelted(); // Sau khi gộp thành công, tiếp tục quá trình
+                    // Bật hiệu ứng nung chảy
+                    if (smeltingEffect != null) smeltingEffect.Play();
+                    if (smeltingSound != null) smeltingSound.Play();
+
+                    InvokeSmelted();
                     return;
                 }
             }
@@ -77,19 +79,19 @@ namespace Kinnly
 
         private void InvokeSmelted()
         {
-            // Gọi hàm Smelted sau thời gian xử lý
             Invoke("Smelted", processingTime[index]);
         }
 
         private void Smelted()
         {
-            // Kết thúc quá trình gộp, cập nhật trạng thái
             isSmelting = false;
 
-            // Thêm item kết quả vào inventory
-            playerInventory.AddItem(output[index], outputAmounts[index]); // Thêm item mới vào inventory
+            // Tắt hiệu ứng nung chảy
+            if (smeltingEffect != null) smeltingEffect.Stop();
+            if (smeltingSound != null) smeltingSound.Stop();
 
-            // Reset trạng thái gộp
+            playerInventory.AddItem(output[index], outputAmounts[index]);
+
             index = -1;
         }
     }
