@@ -36,7 +36,6 @@ ScriptsOnlyBuild:
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrushPickStore
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -271,6 +270,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: GameStartController
     methodName: StartGameAgain
+  - assembly: Assembly-CSharp
+    fullTypeName: GameStartController
+    methodName: ExitApplication
+  - assembly: Assembly-CSharp
+    fullTypeName: GameStartController
+    methodName: ExitApplication
   - assembly: Assembly-CSharp
     fullTypeName: GameStartController
     methodName: StartGame
@@ -2433,4 +2438,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Main/Scenes/SampleScene.unity
-  playerPath: D:/ComputerGraphic_Project/ComputerGraphic/My project.exe
+  playerPath: D:/ComputerGraphic_Project/My project.exe

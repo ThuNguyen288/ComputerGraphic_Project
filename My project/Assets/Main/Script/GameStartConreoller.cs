@@ -85,4 +85,14 @@ public class GameStartController : MonoBehaviour
             // Thêm logic reset kẻ địch (nếu cần)
         }
     }
+    public void ExitApplication()
+    {
+        #if UNITY_EDITOR
+                    // Nếu đang chạy trong Unity Editor, dừng trò chơi.
+                    UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                // Nếu đang chạy trong phiên bản build, thoát game.
+                Application.Quit();
+        #endif
+    }
 }

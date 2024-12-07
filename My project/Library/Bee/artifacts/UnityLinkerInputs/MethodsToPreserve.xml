@@ -1,6 +1,8 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
 		<type fullname="GameStartController">
+			<method name="ExitApplication"/>
+			<method name="ExitApplication"/>
 			<method name="StartGame"/>
 			<method name="StartGameAgain"/>
 			<method name="StartGameAgain"/>

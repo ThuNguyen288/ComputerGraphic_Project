@@ -25,6 +25,8 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         currentDamage = baseDamage;
+        healthBar.interactable = false; // Tắt tính năng kéo thủ công của Slider
+        damageSlider.interactable = false;
 
         // Cập nhật thanh máu UI
         UpdateHealthBar();
@@ -125,10 +127,6 @@ public class PlayerHealth : MonoBehaviour
             if (playerAttack != null && playerAttack.HasWeapon)
             {
                 currentDamage = baseDamage + playerAttack.attackDamage; // Lấy sát thương từ PlayerAttack
-            }
-            else
-            {
-                currentDamage = baseDamage; // Mặc định sát thương là baseDamage nếu không có vũ khí
             }
 
             // Đảm bảo currentDamage không vượt quá giá trị maxDamage

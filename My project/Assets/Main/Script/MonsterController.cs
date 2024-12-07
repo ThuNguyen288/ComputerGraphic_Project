@@ -36,6 +36,7 @@ public class MonsterController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+        healthBar.interactable = false;
 
         // Save the original scale
         originalScale = transform.localScale;
